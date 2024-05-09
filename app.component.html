@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h3>List of Data Fetched From DB</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Inspections</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor=" let data of dataInpections">
+      <td>{{data.inspectionName}}</td>
+      <td>{{data.latitude}}</td>
+      <td>{{data.longitude}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>
